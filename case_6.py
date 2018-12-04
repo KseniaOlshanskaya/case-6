@@ -34,13 +34,3 @@ def get_color_choice(_color_ch):
         break
     return _color_ch
 
-def main():
-    _num_hex = 0
-    _color_ch = ''
-    N = get_num_hexagons(_num_hex)
-    color1 = get_color_choice(_color_ch)
-    color2 = get_color_choice(_color_ch)
-
-if __name__ == "__main__":
-    main()
-
