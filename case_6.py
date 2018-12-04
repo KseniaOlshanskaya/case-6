@@ -1,6 +1,36 @@
 import turtle
 from ru_local import *
 
+
+def hexagon(n):
+    d = 500 / n
+    side_len = (d / (3 ** 0.5))
+    b = (d / (2 * (3 ** 0.5)))
+    c = ((b * 2) + side_len)
+    tesselation(d, b, n, side_len)
+    
+    
+def draw_hexagon(x, y, side_len, color):
+    turtle.goto(x, y)
+    turtle.down()
+    turtle.speed()
+    turtle.color('black', color)
+    turtle.begin_fill()
+    turtle.forward(side_len)
+    turtle.right(60)
+    turtle.forward(side_len)
+    turtle.right(60)
+    turtle.forward(side_len)
+    turtle.right(60)
+    turtle.forward(side_len)
+    turtle.right(60)
+    turtle.forward(side_len)
+    turtle.right(60)
+    turtle.forward(side_len)
+    turtle.left(30)
+    turtle.end_fill()
+
+
 def get_num_hexagons(_num_hex):
     while True:
         _num_hex = input(NUMBER)
@@ -19,6 +49,7 @@ def get_num_hexagons(_num_hex):
         break
     return _num_hex
 
+  
 def get_color_choice(_color_ch):
     while True:
         _color_ch = input(COLOR)
@@ -48,6 +79,7 @@ def get_color_choice(_color_ch):
         _color_ch = 'pink'
     return _color_ch
 
+  
 def tesselation(d, b, n, side_len):
     _color_ch = ''
     color1 = get_color_choice(_color_ch)
@@ -99,4 +131,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
