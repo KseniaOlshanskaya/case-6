@@ -21,18 +21,15 @@ def get_num_hexagons(_num_hex):
     return _num_hex
 
 def get_color_choice(_color_ch):
-    while True:
-        _color_ch = input(COLOR)
-        _color_ch = _color_ch.lower()
-        try:
-            while _color_ch != 'желтый' and _color_ch != 'красный' and _color_ch != 'синий' and \
-                    _color_ch != 'зеленый' and _color_ch != 'оранжевый' and\
-                    _color_ch != 'пурпурный' and  _color_ch != 'розовый':
-                _color_ch = input(RIGHTCOLOR)
-        except ValueError:
+    _color_ch = input(COLOR)
+    _color_ch = _color_ch.lower()
+    try:
+        while _color_ch != 'желтый' and _color_ch != 'красный' and _color_ch != 'синий' and \
+                _color_ch != 'зеленый' and _color_ch != 'оранжевый' and\
+                _color_ch != 'пурпурный' and  _color_ch != 'розовый':
             _color_ch = input(RIGHTCOLOR)
-            continue
-        break
+    except ValueError:
+        _color_ch = input(RIGHTCOLOR)
     if _color_ch == 'желтый':
         _color_ch = 'yellow'
     if _color_ch == 'красный':
