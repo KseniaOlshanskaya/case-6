@@ -9,7 +9,7 @@ def tesselation(d, b, n, side_len):
 
     x = -250 + d
     y = 250 + b
-    x1 = -250 + d
+    x1 = -250 - d
     x2 = -250 + ((3 * d) / 2)
     counter = 0
     counter2 = 1
