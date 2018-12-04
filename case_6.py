@@ -35,3 +35,13 @@ def tesselation(d, b, n, side_len):
             x = x2
         y = y - (side_len + b)
     turtle.mainloop()
+
+
+def main():
+    _num_hex = 0
+    _color_ch = ''
+    N = get_num_hexagons(_num_hex)
+    hexagon(N)
+
+if __name__ == "__main__":
+    main()
