@@ -10,7 +10,7 @@ def draw_hexagon(x, y, side_len, color):
     turtle.goto(x, y)
     turtle.down()
     turtle.speed()
-    turtle.color(color)
+    turtle.color('black', color)
     turtle.begin_fill()
     turtle.forward(side_len)
     turtle.right(60)
