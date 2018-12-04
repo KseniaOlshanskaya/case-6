@@ -25,11 +25,10 @@ def get_color_choice(_color_ch):
         _color_ch = input(COLOR)
         _color_ch = _color_ch.lower()
         try:
-            if _color_ch != 'желтый' and _color_ch != 'красный' and _color_ch != 'синий' and \
+            while _color_ch != 'желтый' and _color_ch != 'красный' and _color_ch != 'синий' and \
                     _color_ch != 'зеленый' and _color_ch != 'оранжевый' and\
                     _color_ch != 'пурпурный' and  _color_ch != 'розовый':
                 _color_ch = input(RIGHTCOLOR)
-                break
         except ValueError:
             _color_ch = input(RIGHTCOLOR)
             continue
@@ -45,7 +44,7 @@ def get_color_choice(_color_ch):
     if _color_ch == 'оранжевый':
         _color_ch = 'orange'
     if _color_ch == 'пурпурный':
-        _color_ch = 'puple'
+        _color_ch = 'purple'
     if _color_ch == 'розовый':
         _color_ch = 'pink'
     return _color_ch
