@@ -1,13 +1,11 @@
 # Ветка Арины (фигура).
 from turtle import *
-def get_num_hexagon(n):
+def hexagon(n):
     d = 500 / n
     side_len = (d / (3 ** 0.5))
     b = (d / (2 * (3 ** 0.5)))
     c = ((b * 2) + side_len)
-    x = -250 + d
-    y = 250 + b
-    return d, side_len, b, c, x, y
+    tesselation(d, b, n, side_len)
 def draw_hexagon(x, y, side_len, color):
     turtle.goto(x, y)
     turtle.down()
